@@ -8,15 +8,16 @@ export default defineAppConfig({
   },
   socials: {
     github: 'https://github.com/ravikantchauhan246',
-    twitter: 'https://twitter.com/HugoRCD__',
+    twitter: 'https://twitter.com/RavikantC2002',
     linkedin: 'https://www.linkedin.com/in/ravikant-chauhan-787abc',
-    instagram: 'https://www.instagram.com/hugo.rcd_',
-    spotify: 'https://open.spotify.com/user/yuvl0zpp3bpx4hne1ag7huten?si=df7ee2777c0c4fc4',
+    leetcode: 'https://leetcode.com/ravikant_chauhan/',
+    
+    
   },
   seo: {
-    title: 'Canvas a Nuxt portfolio template',
-    description: 'Canvas is a simple but beautiful portfolio template for designers and developers built with Nuxt and Tailwind CSS. Made with ❤️ by HugoRCD',
-    url: 'https://canvas.hrcd.fr',
+    title: 'Ravikant Chauhan - Software Engineer & Cloud Enthusiast',
+    description: 'Aspiring Software Engineer with a passion for cloud technologies and building scalable solutions. Exploring the intersection of software development and cloud computing to create innovative solutions.',
+    url: 'https://ravikant.dev'
   },
   ui: {
     colors: {
