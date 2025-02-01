@@ -62,7 +62,7 @@ jobs:
         run: npx nuxi build --preset github_pages
         env:
           NUXT_CONTENT_PREVIEW_API: https://api.nuxt.studio
-          
+          NUXT_PRIVATE_RESEND_API_KEY: ${{ secrets.NUXT_PRIVATE_RESEND_API_KEY }}
 
       # Deployment job
       - name: Deploy 🚀
