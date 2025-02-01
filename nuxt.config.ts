@@ -95,11 +95,13 @@ export default defineNuxtConfig({
       useCookie: true,
       cookieKey: 'i18n_redirected',
       redirectOn: 'root',
+      fallbackLocale: 'en',
     },
     strategy: 'prefix',
     defaultLocale: 'en',
     baseUrl: '/',
     vueI18n: '~/i18n.config.ts',
+    debug: process.env.NODE_ENV === 'production',
   },
 
   icon: {

@@ -3,6 +3,12 @@ import { Toaster } from 'vue-sonner'
 import * as locales from '@nuxt/ui/locale'
 
 const { locale } = useI18n()
+
+// Global error handler
+onErrorCaptured((err, instance, info) => {
+  console.error('Captured error:', err, instance, info)
+  return false // Prevent error from propagating
+})
 </script>
 
 <template>
