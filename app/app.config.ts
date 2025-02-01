@@ -9,7 +9,7 @@ export default defineAppConfig({
   socials: {
     github: 'https://github.com/ravikantchauhan246',
     twitter: 'https://twitter.com/RavikantC2002',
-    linkedin: 'https://www.linkedin.com/in/ravikant-chauhan-787abc',
+    linkedin: 'https://www.linkedin.com/in/ravikantchauhan2002',
     leetcode: 'https://leetcode.com/ravikant_chauhan/',
     
     
