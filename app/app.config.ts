@@ -1,7 +1,7 @@
 export default defineAppConfig({
   profile: {
     name: 'Ravikant Chauhan',
-    job: 'FullStack Developer',
+    job: '',
     email: 'ravikantchauhan246@gmail.com',
     phone: '+91 72766 05768',
     picture: 'https://avatars.githubusercontent.com/u/53376708?v=4',
@@ -15,7 +15,7 @@ export default defineAppConfig({
     
   },
   seo: {
-    title: 'Ravikant Chauhan - Software Engineer & Cloud Enthusiast',
+    title: 'Ravikant Chauhan - Developer Portfolio',
     description: 'Aspiring Software Engineer with a passion for cloud technologies and building scalable solutions. Exploring the intersection of software development and cloud computing to create innovative solutions.',
     url: 'https://ravikant.dev'
   },
