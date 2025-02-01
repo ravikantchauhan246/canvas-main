@@ -8,6 +8,8 @@ const router = useRouter()
 // Keep track of whether we've shown the toast
 const hasShownToast = ref(false)
 
+const isChangingLocale = ref(false)
+
 const { data: page, error, pending } = await useAsyncData(
   `content-${route.path}-${locale.value}`, // Add locale to key to force revalidation
   async () => {
@@ -70,20 +72,27 @@ defineShortcuts({
     },
   },
 })
+
+watch(locale, () => {
+  isChangingLocale.value = true
+  setTimeout(() => {
+    isChangingLocale.value = false
+  }, 1000) // Reset after 1 second
+})
 </script>
 
 <template>
   <div>
     <ClientOnly>
-      <!-- Show loading state -->
-      <template v-if="pending">
+      <!-- Show loading state for both pending and 404 during locale change -->
+      <template v-if="pending || (error?.statusCode === 404 && isChangingLocale)">
         <div class="flex justify-center items-center min-h-screen">
           <ULoadingIcon />
         </div>
       </template>
 
-      <!-- Show error state -->
-      <template v-else-if="error">
+      <!-- Show error state only for non-404 errors -->
+      <template v-else-if="error && error.statusCode !== 404">
         <div class="flex flex-col items-center justify-center min-h-screen">
           <h1 class="text-2xl font-bold mb-4">{{ error.statusMessage }}</h1>
           <UButton @click="router.push(useLocalePath()('/'))">
