@@ -5,6 +5,13 @@ import { Analytics } from '@vercel/analytics/nuxt';
 
 const { locale } = useI18n()
 
+// Add title handling
+useHead({
+  titleTemplate: (title) => {
+    return title ? `${title} | Ravikant Chauhan` : 'Ravikant Chauhan'
+  }
+})
+
 // Global error handler
 onErrorCaptured((err, instance, info) => {
   console.error('Captured error:', err, instance, info)

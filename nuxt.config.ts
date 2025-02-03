@@ -133,4 +133,11 @@ export default defineNuxtConfig({
   ogImage: {
     zeroRuntime: true,
   },
+
+  app: {
+    head: {
+      titleTemplate: '%s | Ravikant Chauhan',
+      title: 'Ravikant Chauhan'
+    }
+  }
 })
