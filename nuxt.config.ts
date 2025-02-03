@@ -58,11 +58,12 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       available: process.env.NUXT_PUBLIC_AVAILABLE,
-      meetingLink: process.env.NUXT_PUBLIC_MEETING_LINK,
+      meetingLink: 'https://calendly.com/ravikantchauhan246/',
     },
     private: {
       resendApiKey: process.env.NUXT_PRIVATE_RESEND_API_KEY,
     },
+
   },
 
   routeRules: {

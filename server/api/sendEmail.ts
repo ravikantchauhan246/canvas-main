@@ -9,7 +9,7 @@ export default defineEventHandler(async (event: H3Event) => {
     const { email, subject, message, phone, fullname } = body
     return await resend.emails.send({
       from: 'Ravikant Chauhan <ravikantchauhan246@gmail.com>',
-      to: ['ravikantchauhan246@gmail.com'],
+      to: ['chauhan@ravikant.dev'],
       subject: 'New message from website',
       html: `
       <p>A new message has been sent from the portfolio contact form.</p>
