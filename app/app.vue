@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { Toaster } from 'vue-sonner'
 import * as locales from '@nuxt/ui/locale'
+import { Analytics } from '@vercel/analytics/nuxt';
 
 const { locale } = useI18n()
 
@@ -24,6 +25,7 @@ onErrorCaptured((err, instance, info) => {
         </UApp>
       </NuxtLayout>
       <Toaster close-button />
+      <Analytics />
       <DotPattern class="absolute inset-0 -z-10 size-full fill-white/5 [mask-image:radial-gradient(white,transparent_85%)]" />
     </Body>
   </Html>
