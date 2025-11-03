@@ -80,7 +80,7 @@ export const DATA = {
   education: [
     {
       school: "Savitribai Phule Pune University",
-      href: "https://buildspace.so",
+      href: "https://www.unipune.ac.in/",
       degree: "Bachelor of Engineering in Computer Science",
       logoUrl: "/uop_logo.jpg",
       start: "2023",
