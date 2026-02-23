@@ -83,8 +83,8 @@ export const DATA = {
       href: "https://www.unipune.ac.in/",
       degree: "Bachelor of Engineering in Computer Science",
       logoUrl: "/uop_logo.jpg",
-      start: "2023",
-      end: "2024",
+      start: "2021",
+      end: "2025",
     }
   ],
   projects: [
